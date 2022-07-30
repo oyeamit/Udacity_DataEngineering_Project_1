@@ -35,20 +35,20 @@ user_table_create = ("""
 song_table_create = ("""
     CREATE TABLE IF NOT EXISTS songs (
         song_id varchar PRIMARY KEY,
-        title varchar,
-        artist_id varchar,
+        title varchar NOT NULL,
+        artist_id varchar NOT NULL,
         year int,
-        duration numeric
+        duration numeric NOT NULL
         );
 """)
 
 artist_table_create = ("""
     CREATE TABLE IF NOT EXISTS artists (
         artist_id varchar PRIMARY KEY,
-        name varchar,
+        name varchar  NOT NULL,
         location varchar,
-        latitude numeric,
-        longitude numeric
+        latitude double precision,
+        longitude double precision
         );
 """)
 
