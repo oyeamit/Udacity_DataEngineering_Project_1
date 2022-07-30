@@ -1,0 +1,5 @@
+pip install psycopg2-binary
+pip install sqlalchemy==1.3.9
+pip install ibm_db_sa
+pip install ipython-sql==0.4.1
+pip install pandas==1.4.3 
